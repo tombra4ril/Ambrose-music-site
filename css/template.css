@@ -62,10 +62,10 @@ nav{
 
 /* Section */
 section{
-  padding: 40px 50px; 
+  padding: 40px 10%; 
 }
 .menu-transversal{
-  padding-left: 20%;
+  padding-left: 5%;
 }
 .menu-transversal span{
   padding: 0px 5px;
@@ -73,4 +73,41 @@ section{
 }
 .menu-transversal a{
   text-decoration: none;
+}
+/* Main */
+.img-text{
+  position: relative;
+}
+.img-text img{
+  display: block;
+  width: 100%;
+}
+.img-text div{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  opacity: 0.5;
+  background-color: #9a9b99;
+}
+.img-text h2{
+  text-align: center;
+}
+.img-ctl-buttons{
+  padding: 20px 0px;
+  text-align: center;
+}
+.img-ctl-buttons span:first-child{
+  background-color: #ff3050;
+}
+.rd-button{
+  border: solid 1px #292929;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.dwnd{
+  border-top: solid 1px;
 }
