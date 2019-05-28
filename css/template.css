@@ -75,6 +75,9 @@ section{
   text-decoration: none;
 }
 /* Main */
+main{
+  padding: 50px 0px;
+}
 .img-text{
   position: relative;
 }
@@ -100,7 +103,7 @@ section{
   background-color: #ff3050;
 }
 .rd-button{
-  border: solid 1px #292929;
+  border: solid 1px #e62a2a;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -109,5 +112,45 @@ section{
   margin-right: 20px;
 }
 .dwnd{
-  border-top: solid 1px;
+  border-top: solid 1px#aaaaaa;
+  border-style: inset;
+  padding: 20px 0px;
+}
+.dwnd span, .dwnd-audio audio{
+  vertical-align: middle;
+}
+.dwnd-dot{
+  font-size: 2.5em;
+}
+.dwnd-img img{
+  display: inline-block;
+  width: 20%;
+  border-radius: 5%;
+  vertical-align: middle;
+}
+
+/* Article */
+.show{
+  padding-top: 40px;
+  border-style: solid 1px #aaaaaa;
+  box-shadow: 2px 2px #cccccc;
+  text-align: center;
+}
+.h-white-line{
+  display: inline-block;
+  width: 20%;
+  height: 2px;
+  background-color: #aaaaaa;
+}
+.w-e-d{
+  padding-top: 40px;
+  text-align: left;
+}
+.w-e-d-icon{
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  background-color: #20ff20;
+  border-radius: 50%;
 }
