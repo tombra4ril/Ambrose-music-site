@@ -6,14 +6,18 @@
 }
 
 .hide{
-  /* display: none; */
+  display: none;
 }
 
 /* Header */
 nav{
+  display: inline-block;
+  width: 100%;
   background: linear-gradient(to right, #152732, #999897, #152732);
   padding: 20px 10px 0px 10px;
-  color: #ffffff;
+  color: #a80606;
+  position: fixed;
+  z-index: 10;
 }
 .menu-icon-div{
   padding-bottom: 20px;
@@ -27,7 +31,8 @@ nav{
 }
 .logo{
   display: inline-block;
-  float: right;
+  width: 85%;
+  float: left;
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -62,7 +67,7 @@ nav{
 
 /* Section */
 section{
-  padding: 40px 10%; 
+  padding: 120px 10%; 
 }
 .menu-transversal{
   padding-left: 5%;
@@ -76,7 +81,7 @@ section{
 }
 /* Main */
 main{
-  padding: 50px 0px;
+  padding: 40px 0px;
 }
 .img-text{
   position: relative;
@@ -136,21 +141,108 @@ main{
   box-shadow: 2px 2px #cccccc;
   text-align: center;
 }
-.h-white-line{
+.h-line{
   display: inline-block;
   width: 20%;
   height: 2px;
   background-color: #aaaaaa;
 }
 .w-e-d{
-  padding-top: 40px;
+  padding-top: 20px;
+  text-align: initial;
+}
+.w-e-d .icon-div{
+  display: inline-block;
+  width: 20%;
   text-align: left;
 }
 .w-e-d-icon{
   display: inline-block;
   text-align: center;
-  line-height: 50px;
+  line-height: 50px ;
   width: 50px;
   background-color: #20ff20;
   border-radius: 50%;
+}
+.v-line{
+  display: inline-block;
+  border-left: 1px solid #aaaaaa;
+  vertical-align: middle;
+}
+.w-e-d .v-line{
+  width: 5%;
+  height: 30px;
+}
+.about h2{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.slant-img{
+  display: inline-block;
+  float: left;
+  width: 40%;
+  text-align: center;
+  border-right: solid 1px #999897;
+}
+.slant-img > img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.shdw{
+  width: 100%;
+}
+.shdw img{
+  width: 100px;
+  height: 10px;
+  border-radius: 100%;
+  transform: rotate(180deg);
+}
+.about-div{
+  display: inline-block;
+  width: 60%;
+  float: left;
+}
+.about-div p{
+  padding-left: 0.5%;
+  width: 94%;
+  float: right;
+}
+aside{
+  display: inline-block;
+  width: 100%;
+  padding-top: 50px;
+}
+aside > h2{
+  text-align: center;
+  padding-bottom: 20px;
+}
+form{
+  padding-top: 10px;
+}
+
+/* Footer */
+footer{
+  padding-top : 20px;
+  background-color: #152732;
+  color: #ffffff;
+  text-align: center;
+}
+
+.phn, .email{
+  padding-top: 40px;
+}
+.phn li, .email li{
+  list-style-type: none;
+  padding: 10px 0px;
+}
+footer .h-line{
+  width: 90%;
+}
+.copy-rgt{
+  padding: 20px 0px;
+}
+.d-rgt{
+  padding-bottom: 20px;
 }
