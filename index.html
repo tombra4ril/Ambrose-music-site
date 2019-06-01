@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link type="text/css" rel="stylesheet" href="./css/vendor/font-awesome.css" />
-    <link type="text/css" rel="stylesheet" href="./css/template.css" />
+    <link type="text/css" rel="stylesheet" href="css/vendor/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="css/template.css" />
     <title>Ambrose Music Library</title>
   </head>
 
@@ -17,42 +17,44 @@
             <span>AMBROSE<span class="amb-color">music</span></span>
           </div>
 
-          <span class="fa fa-bars menu-icon-bar"></span>
-          <span class="fa fa-times menu-icon-x hide"></span>
+          <span class="fa fa-bars menu-icon-bar add-effect"></span>
+          <span class="fa fa-times menu-icon-x hide add-effect"></span>
         </div>
 
           <ul class="menu-items hide">
             <li class="menu-item"><a href="/">Home</a></li>
             <li class="menu-item"><a href="#download">Downloads</a></li>
-            <li class="menu-item"><a href="./contact.html">Contact Us</a></li>
+            <li class="menu-item"><a href="contact.html">Contact Us</a></li>
             <li class="menu-item"><a href="about.html">About</a></li>
           </ul>
       </nav>
     </header>
 
-    <section>
+    <section class="carousal">
       <div class="menu-transversal">
         <a href="/"><span class="fa fa-home"></span></a>
         <span>/</span>
-        <a href="/index.html"><span>Home</span></a>
+        <a href="index.html"><span>Home</span></a>
       </div>
 
-      <main>
-        <div class="img-carousal">
-          <div class="img-text">
-            <img src="./images/album.jpg" alt="image here"/>
-            <div><h2>Ijaw Man</h2></div>
-          </div>
-          <div class="img-text">
-            <img src="./images/pic-1.jpg" alt="image here"/>
-            <div><h2>Ijaw Man</h2></div>
-          </div>
-          <div class="img-text">
-            <img src="./images/pic-2.jpg" alt="image here"/>
-            <div><h2>Ijaw Man</h2></div>
-          </div>
+      <div class="img-carousal">
+        <div class="img-text small-big">
+          <img src="images/album.jpg" alt="image here"/>
+          <div><h2>Ijaw Man</h2></div>
         </div>
+        <div class="img-text hide small-big">
+          <img src="images/pic-1.jpg" alt="image here"/>
+          <div><h2>Ijaw Man</h2></div>
+        </div>
+        <div class="img-text hide small-big">
+          <img src="images/pic-2.jpg" alt="image here"/>
+          <div><h2>Ijaw Man</h2></div>
+        </div>
+      </div>
+    </section>
 
+    <section class="main-content">
+      <main>
         <div class="img-ctl-buttons hide">
           <span class="rd-button"></span>
           <span class="rd-button"></span>
@@ -71,12 +73,12 @@
           <div class="dwnd">
             <span class="dwnd-dot">.</span>
             <span class="dwnd-img">
-              <img src="./images/pic-1.jpg" alt="Image" />
+              <img src="images/pic-1.jpg" alt="Image" />
             </span>
             <span class="dwnd-title">Leave no Trail</span>
             <span class="dwnd-audio">
               <audio controls>
-                <source src="./audios/leave no trail.mp3" type="audio/mpeg"/>
+                <source src="audios/leave no trail.mp3" type="audio/mpeg"/>
               </audio>
             </span>
             <span class="dwnd-button fa fa-download"></span>
@@ -85,12 +87,12 @@
           <div class="dwnd">
             <span class="dwnd-dot">.</span>
             <span class="dwnd-img">
-              <img src="./images/pic-2.jpg" alt="Image" />
+              <img src="images/pic-2.jpg" alt="Image" />
             </span>
             <span class="dwnd-title">Leave no Trail</span>
             <span class="dwnd-audio">
               <audio controls>
-                <source src="./audios/leave no trail.mp3" type="audio/mpeg"/>
+                <source src="audios/leave no trail.mp3" type="audio/mpeg"/>
               </audio>
             </span>
             <span class="dwnd-button fa fa-download"></span>
@@ -132,9 +134,9 @@
           <h2>ABOUT</h2>
           <div class="img-shdw">
             <div class="slant-img">
-              <img src="./images/pic-2.jpg" alt="Image here" />
+              <img src="images/pic-2.jpg" alt="Image here" />
               <div class="shdw">
-                <img src="./images/pic-2.jpg" alt="Image here" />
+                <img src="images/pic-2.jpg" alt="Image here" />
               </div>
             </div>
             <div class="about-div">
@@ -193,5 +195,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
