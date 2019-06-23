@@ -3,9 +3,12 @@ const menuIconBar = document.getElementsByClassName("menu-icon-bar")[0];
 const menuIconX = document.getElementsByClassName("menu-icon-x")[0];
 const menuItems = document.getElementsByClassName("menu-items")[0];
 
-//Sliding images variables
+//Fading images variables
 const imageDiv = document.getElementsByClassName("img-text");
 let imageNumber = 0;
+
+//Timing variable
+let fadeIn = 0;
 
 //Test the menu icon variables if they are ready
 if(menuIconBar && menuIconX){
@@ -18,9 +21,9 @@ if(menuIconBar && menuIconX){
   });
 }
 
-//Test the sliding images if they are ready
+//Test the Fading images if they are ready
 if(imageDiv){
-  setInterval(slideImages, 5000);
+  fadeIn = setInterval(slideImages, 5000);
 }
 
 //Function that makes the menu icons toggle
@@ -49,6 +52,7 @@ function slideImages(){
  
   imageDiv[num].classList.toggle("hide");
 }
-function changeImageCount(){
+
+function changeImageCount(num){
   return (++imageNumber % 3);
 }

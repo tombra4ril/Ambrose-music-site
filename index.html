@@ -6,13 +6,14 @@
 
     <link type="text/css" rel="stylesheet" href="css/vendor/font-awesome.css" />
     <link type="text/css" rel="stylesheet" href="css/template.css" />
+    <link type="text/css" rel="stylesheet" href="css/responsive.css" />
     <title>Ambrose Music Library</title>
   </head>
 
   <body>
     <header>
       <nav>
-        <div class="menu-icon-div">
+        <div class="menu-icon-div col-d-4">
           <div class="logo">
             <span>AMBROSE<span class="amb-color">music</span></span>
           </div>
@@ -21,11 +22,11 @@
           <span class="fa fa-times menu-icon-x hide add-effect"></span>
         </div>
 
-          <ul class="menu-items hide">
-            <li class="menu-item"><a href="/">Home</a></li>
-            <li class="menu-item"><a href="#download">Downloads</a></li>
-            <li class="menu-item"><a href="contact.html">Contact Us</a></li>
-            <li class="menu-item"><a href="about.html">About</a></li>
+          <ul class="menu-items hide col-d-8">
+            <li class="menu-item col-d-3"><a href="/">Home</a></li>
+            <li class="menu-item col-d-3"><a href="#download">Downloads</a></li>
+            <li class="menu-item col-d-3"><a href="contact.html">Contact Us</a></li>
+            <li class="menu-item col-d-3"><a href="about.html">About</a></li>
           </ul>
       </nav>
     </header>
@@ -38,95 +39,124 @@
       </div>
 
       <div class="img-carousal">
-        <div class="img-text small-big">
+        <div class="img-text big-small">
           <img src="images/album.jpg" alt="image here"/>
           <div><h2>Ijaw Man</h2></div>
         </div>
-        <div class="img-text hide small-big">
+        <div class="img-text hide big-small">
           <img src="images/pic-1.jpg" alt="image here"/>
           <div><h2>Ijaw Man</h2></div>
         </div>
-        <div class="img-text hide small-big">
+        <div class="img-text hide big-small">
           <img src="images/pic-2.jpg" alt="image here"/>
           <div><h2>Ijaw Man</h2></div>
         </div>
+      </div>
+      <div class="img-ctl-buttons hide">
+        <span class="rd-button"></span>
+        <span class="rd-button"></span>
+        <span class="rd-button"></span>
       </div>
     </section>
 
     <section class="main-content">
       <main>
-        <div class="img-ctl-buttons hide">
-          <span class="rd-button"></span>
-          <span class="rd-button"></span>
-          <span class="rd-button"></span>
-        </div>
-
         <div class="bkg-linear">
           <div class="move-h-v">
-            <span class="liner-text">The Ijaw Language, our heritage, our pride.</span>
-            <span class="liner-text">WE WILL STRIVE</span>
-            <span class="liner-text">WE WILL CONQUER</span>
+            <div><span class="linear-text">The Ijaw Language,</span></div>
+            <div><span class="linear-text">our heritage, our pride.</span></div>
+            <div><span class="linear-text">WE WILL STRIVE</span></div>
+            <div><span class="linear-text">WE WILL CONQUER</span></div>
           </div>
         </div>
 
-        <div class="dwnd-div">
-          <div class="dwnd">
-            <span class="dwnd-dot">.</span>
-            <span class="dwnd-img">
+        <div class="dwnd-div" id="download">
+          <h2>Get your Downloads here</h2>
+          <div class="dwnd row">
+            <div class="dwnd-img">
               <img src="images/pic-1.jpg" alt="Image" />
-            </span>
-            <span class="dwnd-title">Leave no Trail</span>
-            <span class="dwnd-audio">
-              <audio controls>
-                <source src="audios/leave no trail.mp3" type="audio/mpeg"/>
-              </audio>
-            </span>
-            <span class="dwnd-button fa fa-download"></span>
+              <div class="lyrics hide"></div>
+            </div>
+            <div>
+              <h2 class="dwnd-title">Leave no Trail</h2>
+              <div class="dwnd-audio">
+                <audio controls>
+                  <source src="audios/leave no trail.mp3" type="audio/mpeg"/>
+                  <span>Your Browser cannot play this file.<br>Please user Google Chrome to view this page.</span>
+                </audio>
+              </div>
+              <div>
+                <div class="dwnd-icon-div">
+                  <span class="dwnd-button fa fa-download"></span>
+                  <span>Download</span>
+                </div>
+              </div>
+            </div>
           </div>
     
-          <div class="dwnd">
-            <span class="dwnd-dot">.</span>
-            <span class="dwnd-img">
+          <div class="dwnd row">
+            <div class="dwnd-img">
               <img src="images/pic-2.jpg" alt="Image" />
-            </span>
-            <span class="dwnd-title">Leave no Trail</span>
-            <span class="dwnd-audio">
-              <audio controls>
-                <source src="audios/leave no trail.mp3" type="audio/mpeg"/>
-              </audio>
-            </span>
-            <span class="dwnd-button fa fa-download"></span>
+              <div class="lyrics hide"></div>
+            </div>
+            <div>
+              <h2 class="dwnd-title">Leave no Trail</h2>
+              <div class="dwnd-audio">
+                <audio controls>
+                  <source src="audios/leave no trail.mp3" type="audio/mpeg"/>
+                  <span>Your Browser cannot play this file.<br>Please user Google Chrome to view this page.</span>
+                </audio>
+              </div>
+              <div>
+                <div class="dwnd-icon-div">
+                  <span class="dwnd-button fa fa-download"></span>
+                  <span>Download</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
 
       <article>
         <div class="show">
-          <h1>WHAT WE DO</h1>
-          <span class="h-white-line"></span>
+          <h2>WHAT WE DO</h2>
           
           <div class="main-show">
-            <div class="w-e-d">
-              <div class="icon-div">
-                <span class="w-e-d-icon fa fa-university"></span>
+            <div class="w-e-d col-d-4">
+              <h3>Stage Performance</h3>
+              <div>
+                <div class="icon-div front">
+                  <span class="w-e-d-icon fa fa-university"></span>
+                </div>
+                <div class="back">
+                  <span>We perform on stage.</span>
+                </div>
               </div>
-              <span class="v-line"></span>
-              <span>We perform on stage.</span>
             </div>
-            <div class="w-e-d">
-              <div class="icon-div">
-                <span class="w-e-d-icon fa fa-bullhorn"></span>
+            <div class="w-e-d col-d-4">
+              <h3>Church Performance</h3>
+              <div>
+                <div class="icon-div front">
+                  <span class="w-e-d-icon fa fa-bullhorn"></span>
+                </div>
+                <div class="back">
+                  <span>We perform on stage.</span>
+                </div>
               </div>
-              <span class="v-line"></span>
-              <span>We perform in church.</span>
             </div>
-            <div class="w-e-d">
-              <div class="icon-div">
-                <span class="w-e-d-icon fa fa-child"></span>
+            <div class="w-e-d col-d-4">
+              <h3>Children Events Performance</h3>
+              <div>
+                <div class="icon-div front">
+                  <span class="w-e-d-icon fa fa-university"></span>
+                </div>
+                <div class="back">
+                  <span>We perform on stage.</span>
+                </div>
               </div>
-              <span class="v-line"></span>
-              <span>We perform for children.</span>
             </div>
+
           </div>
         </div>
 
@@ -151,15 +181,15 @@
         <h3>Your E-mail address will not be published</h3>
 
         <form action="#" method="POST">
-          <input type="text" placeholder="Comment..." name="comment" />
-          <input type="text" placeholder="Name" name="name" />
-          <input type="text" placeholder="Email" name="email" />
+          <div><input class="input" type="text" required placeholder="Name" name="name" /></div>
+          <div><input class="input" type="email" required placeholder="Email" name="email" /></div>
+          <div><textarea class="input" type="text" placeholder="Comment..." name="comment" wrap></textarea></div>
 
-          <span class="h-white-line"></span>
-          <button type="submit" class="sbt-btn">
-            POST COMMENT
-          </button>
-          <span class="h-white-line"></span>
+          <div class="button-div">
+            <button type="submit" class="sbt-btn">
+              POST COMMENT
+            </button>
+          </div>
         </form>
       </aside>
     </section>
