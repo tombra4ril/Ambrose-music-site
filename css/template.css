@@ -170,8 +170,7 @@ main{
   font-size: 2em;
 }
 .bkg-linear{
-  background: url("/images/ijaw.jpg");
-  opacity: 0.8;
+  background: url("../images/ijaw.jpg");
 }
 .dwnd-div{
   margin-top: 100px;
