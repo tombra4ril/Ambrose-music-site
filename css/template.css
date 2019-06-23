@@ -78,7 +78,7 @@ section.carousal{
   padding: 120px 0px 0px 0px;
 }
 section.main-content{
-  padding: 40px 50px; 
+  padding: 40px 5px; 
 }
 .menu-transversal{
   padding-left: 5%;
@@ -319,7 +319,7 @@ form{
   margin-bottom: 20px;
   padding-left: 5px;
   background-color: #dddddd;
-  border: #2858dd solid 1px;
+  border: #cccccc solid 1px;
   border-radius: 5px;
 }
 input{
